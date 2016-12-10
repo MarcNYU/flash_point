@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class light_controller : MonoBehaviour {
-	public light_object obj;
 	public bool rOn;
 	public bool lOn;
 	public Light FL;
@@ -15,8 +14,8 @@ public class light_controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.mouse0)) {lOn = !lOn;} 
-		else if (Input.GetKey (KeyCode.mouse1)) {rOn = !rOn;}
+		if (Input.GetKey (KeyCode.Mouse0)) {lOn = !lOn;} 
+		else if (Input.GetKey (KeyCode.Mouse1)) {rOn = !rOn;}
 
 
 		if (!(rOn && lOn)) {
